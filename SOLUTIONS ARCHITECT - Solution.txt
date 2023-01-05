@@ -1,38 +1,41 @@
+As a Solutions Architect in virtual experience course by AWS, designed an architecture as per clients requirements,
+Below is letter of solution to the clients problem.
+
 Hello Lilly,
 
 I appreciate your concern in telling us about the difficulties you are facing. Congratulations on your growth as the recent news say that you are experiencing big growth as a result. I went through your mail, I understood all the problems you encountered
 with. No worries, because we are here to solve them as soon as possible. As you said, due to your growth, your website experiences some slowdown in response time. Now, this is because traffic on your website is increased before which sometimes crashes down your service, due to running out of memory. Also facing issues during deployment. So we are here with a solution, we would be designing some architecture. 
 
 Firstly, we need you to understand which services we will be using in our architecture.
-Route 53, Elastic Load Balancing, Elastic Beanstalk with Autoscaling EC2 Group
-, RDS, S3, CodePipeline.
+Route 53, Elastic Load Balancing, Elastic Beanstalk with Autoscaling EC2 Group, RDS, S3, CodePipeline.
 
 
 
--As you would be using our AWS domain and DNS management, a hosted zone is required which is Route 53.
+As you would be using our AWS domain and DNS management, a hosted zone is required which is Route 53.
 
--Due to the increase in traffic on your website, we would be using Elastic Load Balancing, which will distribute your traffic across the application servers such as EC2. It will also use a health check to know which server should service the request.
--As you are facing downtime during the deployment, and your application is SPA React which is backed by Python as well. We would recommend a solution based on Elastic Beanstalk with Autoscaling EC2 Group. This will support the Python application, is fundamentally featured for scaling, and can assist Elastic Beanstalk’s Blue/Green deployment which will remove downtime when deploying.
+--Due to the increase in traffic on your website, we would be using Elastic Load Balancing, which will distribute your traffic across the application servers such as EC2. It will also use a health check to know which server should service the request.
 
--For relational database hosting RDS is a platform used.
--As your object would be getting stored in the cloud, herein S3 will help in this case.
+--As you are facing downtime during the deployment, and your application is SPA React which is backed by Python as well. We would recommend a solution based on Elastic Beanstalk with Autoscaling EC2 Group. This will support the Python application, is fundamentally featured for scaling, and can assist Elastic Beanstalkâ€™s Blue/Green deployment which will remove downtime when deploying.
 
--As your architecture must have CodePipelinewhich helps to build code and can deploy it to your services, Can be used with Elastic Beanstalk for blue/green no-downtime deployments.
+--For relational database hosting RDS is a platform used.
+
+--As your object would be getting stored in the cloud, herein S3 will help in this case.
+
+--As your architecture must have CodePipelinewhich helps to build code and can deploy it to your services, Can be used with Elastic Beanstalk for blue/green no-downtime deployments.
 These above-stated solutions we would be providing in your architecture which is going to solve all your problems.
 
 Let's discuss the bills, and which solution will cost you accordingly.
--As we would be using Elastic Load Balancing, charges are based on the number of hours the load balancer runs and (at a high level) the amount of traffic it services.
+--As we would be using Elastic Load Balancing, charges are based on the number of hours the load balancer runs and (at a high level) the amount of traffic it services.
 
--For Elastic Beanstalk, billing is based on a combination of the EC2, RDS, and ELB that you use.
+--For Elastic Beanstalk, billing is based on a combination of the EC2, RDS, and ELB that you use.
 
--EC2 is charged based on resources of the virtual servers (RAM, CPU, storage), per hour.
+--EC2 is charged based on resources of the virtual servers (RAM, CPU, storage), per hour.
 
--RDS are charged the same as EC2.
+--RDS are charged the same as EC2.
 
--For S3, charged based on the amount of data being stored, how it’s stored, and for retrieval.
+--For S3, charged based on the amount of data being stored, how itâ€™s stored, and for retrieval.
 
--For CodePipeline, it is charged per pipeline.
-Please have a look at the Architecture diagram below.
+--For CodePipeline, it is charged per pipeline.
 
 
 Thank You for reaching out to us.
